@@ -1,12 +1,13 @@
 ﻿  Shader "Size/Morphing" {
     Properties {
       _MainTex ("Texture", 2D) = "white" {}
-      _Amount ("Girth Amount", Range(0,0.5)) = 0.5
+      _Amount ("Girth Amount", Range(-0.5,0.5)) = 0.5
     }
     SubShader {
       Tags { "RenderType" = "Opaque" }
       CGPROGRAM
-      
+      //dun is -0.16
+      //dik is 0.5
       #pragma surface surf Lambert vertex:vert
       
       struct Input {
